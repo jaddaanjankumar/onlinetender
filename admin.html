@@ -1,0 +1,103 @@
+<html></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes colours {
+           0%{
+            border-color:blue deeppink deeppink deeppink;
+           } 
+           30%{border-color: deeppink blue deeppink deeppink}
+           60%{border-color: deeppink deeppink blue deeppink}
+           100%{border-color: deeppink deeppink deeppink blue}
+        }
+     table{
+        border: 2px solid black;
+        align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 70px;
+       border-style: inset outset inset outset;
+       border-color: white;
+    box-shadow: 10px 10px 10px rgba(250,250,250,0.5);
+       background-size: cover;
+       }
+       tr,td,table{
+        padding: 20px;
+       }
+       td{
+        font-weight: bold;
+        font-size:20px;
+        color:rgb(254, 249, 249);
+  }
+      body{
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    .log{
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: red;
+        }
+    .sign{
+        color:white;
+        font-size: 30px;
+    }
+    #but{
+        background-color: blue;
+        color:white;
+        font-size: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    #but:hover{
+        background-color: black;
+        color:white;
+    }
+ a{
+    color:white;
+    text-decoration: none;
+ }
+ #home{
+    color:white;
+    font-size: 30px;
+    margin-left: 100px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px;
+ }
+ #ad{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+   left:80%;
+    background-color: red;
+    display: inline-block;
+    border-radius: 20px;
+    top:2%;
+    padding: 10px;
+ }
+    </style>
+</head>
+<body background="img/loginpic3.jpg">
+    <div class="log">Admin Log In</div>
+    <a href="login.html"><input type="submit" value="User Login" id="ad"></a>
+    <form action="Admin.jsp" method="POST">
+<table>
+    <tr>
+        <td>Enter Email:</td><td><input type="email" placeholder="enter email" required id="t1" name="t1"></td>
+    </tr>
+    <tr>
+        <td>Enter password:</td><td><input type="password" placeholder="enter password" required id="t2" name="t2"></td>
+    </tr>
+    <tr><td></td><td><input type="submit" value="login" id="but"></td></tr>
+    
+</table></form>
+
+</body>
+</html>
